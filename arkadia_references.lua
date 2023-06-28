@@ -2,6 +2,26 @@ arkadia_references = arkadia_references or {
     state = {}
 }
 
+function arkadia_references:createElfShorts()
+	arElf = tempAlias("^/ar elf$", [[
+		cecho("<yellow>Przymiotniki w kategorii <green>'skora':<reset> bladoskory, ciemnoskory, gladkoskory, opalony, smagly\n\n")
+
+		cecho("<yellow>Przymiotniki w kategorii <green>'budowa':<reset> chudy, dlugonogi, gibki, lekki, niewysoki, pajakowaty, smukly, szczuply, szkieletowaty, tyczkowaty, watly, wiotki, wysoki, wychudzony, zaglodzony, zgrabny, zylasty\n\n")
+
+		cecho("<yellow>Przymiotniki w kategorii <green>'wiek':<reset> dojrzaly, leciwy, mlody, podrastajacy, stary, szczawikowaty, wiekowy\n\n")
+
+		cecho("<yellow>Przymiotniki w kategorii <green>'ogolne':<reset> apatyczny, arogancki, bezwzgledny, butny, charakterny, chwacki, czujny, dostojny, dumny, energiczny, frasobliwy, hardy, malomowny, melancholijny, nerwowy, niesmialy, nieustepliwy, opanowany, ponury, porywczy, powazny, przyjacielski, rozmowny, roztropny, spokojny, stanowczy, surowy, smialy, wesoly, wyniosly, zaczepny, zadziorny, zawadiacki, zlosliwy, zuchwaly\n\n")
+
+		cecho("<yellow>Przymiotniki w kategorii <green>'zarost':<reset> gladkolicy\n\n")
+
+		cecho("<yellow>Przymiotniki w kategorii <green>'wlosy':<reset> bialowlosy, czarnowlosy, ciemnowlosy, czerwonowlosy, dlugowlosy, jasnowlosy, kasztanowowlosy, kedzierzawy, krotkowlosy, kruczowlosy, lysy, ognistowlosy, rudowlosy, rudy, srebrnowlosy, zielonowlosy, zlotowlosy\n\n")
+
+		cecho("<yellow>Przymiotniki w kategorii <green>'twarz':<reset> dlugonosy, dlugouchy, krotkonosy, krzywonosy, ogorzaly, ostronosy, ostrouchy, piegowaty, puculowaty, spiczastouchy, waskousty\n\n")
+
+		cecho("<yellow>Przymiotniki w kategorii <green>'oczy':<reset> blekitnooki, brazowooki, bystrooki, ciemnooki, czarnooki, fiolkowooki, jasnooki, jednooki, kociooki, kosooki, modrooki, niebieskooki, plomiennooki, roznooki, promiennooki, skosnooki, srebrnooki, szarooki, wielkooki, zimnooki, zielonooki, zlotooki\n\n")
+    ]])
+end
+
 function arkadia_references:createStonesAlias()
     arStones = tempAlias("^/ar kamienie$", [[
         cecho("<gray>+------------------------------------------------------------+<reset>\n")
@@ -89,6 +109,7 @@ end
 function arkadia_references:init()
     arkadia_references:createStonesAlias()
     arkadia_references:createSkillsAlias()
+	arkadia_references:createElfShorts()
 end
 
 arkadia_references:init()
