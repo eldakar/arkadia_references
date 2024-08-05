@@ -202,6 +202,9 @@ local reds = {
     ["w zlym stanie"]="",
     ["w bardzo zlym stanie"]="",
     ["na ktorego naramiennikach wygrawerowano symbole przekletego Khorna, pana glupcow i slabych"]="",
+    ["na ktorego naramiennikach wygrawerowano symbole twego Pana - Khorna"]="AMEN",
+    ["na ktorego naramiennikach wygrawerowano symbole twojego Pana - Khorna"]="AMEN",
+
 }
 local whites = {
     [""]="",
