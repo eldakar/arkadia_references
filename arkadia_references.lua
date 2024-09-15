@@ -2,6 +2,26 @@ arkadia_references = arkadia_references or {
     state = {}
 }
 
+function arkadia_references:createPortalShorts()
+    arPor = tempAlias("/ar por$", [[
+        cecho("<reset>+------------------------------------+\n")
+        cecho("<reset>|   <green>           <magenta>HOB,ZYW              <reset> |\n")
+        cecho("<reset>|        <red>BRO  <green>NW  N  NE<magenta>  WEZ,CPM,GEL<reset> |\n")
+        cecho("<reset>|   <green>            \\ | /               <reset> |\n")
+        cecho("<reset>|   <magenta> KAS,<royal_blue>ROZ  <green>W---X---E  <green>PUC<magenta>,SIN    <reset> |\n")
+        cecho("<reset>|   <green>            / | \\               <reset> |\n")
+        cecho("<reset>|   <magenta> KHE,<red>???  <green>SW  S  SE  <magenta>VAL        <reset> |\n")
+        cecho("<reset>|   <green>           <magenta>MAH,XAV              <reset> |\n")
+        cecho("<reset>+------------------------------------+\n")
+    ]])
+end
+--🢀 🢂 🢁 🢃 🢄 🢅 🢆 🢇
+
+function arkadia_references:test()
+
+end
+
+
 function arkadia_references:createElfShorts()
 	arElf = tempAlias("^/ar elf$", [[
 		cecho("<yellow>Przymiotniki w kategorii <green>'skora':<reset> bladoskory, ciemnoskory, gladkoskory, opalony, smagly\n\n")
@@ -110,6 +130,7 @@ function arkadia_references:init()
     arkadia_references:createStonesAlias()
     arkadia_references:createSkillsAlias()
 	arkadia_references:createElfShorts()
+    arkadia_references:createPortalShorts()
 end
 
 arkadia_references:init()
